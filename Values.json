@@ -1,0 +1,14 @@
+{
+    "listAds" : {
+        "ad_1" : {
+            "header": "White dress",
+            "first-ad": "images/p1.jpg",
+            "second-ad": "images/p2.jpg",
+            "first-ad-text": "first image",
+            "second-ad-text": "Second image",
+            "ad-link": "www.google.com",
+            "ad-caption": "White dresses",
+            "see-more": "see more"
+        }
+    }
+}

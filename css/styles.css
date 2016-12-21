@@ -76,6 +76,7 @@ section {
     float: left;
     border: 1px solid #ddd;
     margin-bottom: 10px;
+    background-size: cover; 
 
 }
 .pop-up .ad a {

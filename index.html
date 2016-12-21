@@ -12,24 +12,48 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="js/main.js"></script> 
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <h1>yourstore.com</h1>
-            </div>
-        </header>
         <main role="main">
-            <section>
+            <header>
+                <div class="logo">
+                    <h1>yourstore.com</h1>
+                </div>
+            </header>
+            <section style="position: relative; margin: 100px;">
+                    <div id="poppup"></div>
+                    <script type="text/template" id="popup-template">
+                    <!--<% _.each(ads, function(ad){ %>-->
+                    <h1><%= listAds.header %></h1>
+                    <img src="<%= listAds.image %>">
+                    <a href="<%= listAds.see %>"></a>
+                    <!--<% }); %>                    -->
+                    </script>
                 
             </section>
 
-            <div  id="popup">
+           <div id="popup">
                 <div id="close">X</div>
-                <p>Are you looking for <strong>'White dresses'</strong>?</p>
-                <div class="ad">
+                <!--<script id="popUpTemplate" type="text/template"> 
+                    <p>Are you looking for <strong><%= header %></strong>?</p>
+                    <div class="ad">
+                        <div>
+                            <img src="<%= first-ad %>" alt="<%= first-ad-text %>">
+                            <img src="<%= second-ad %>" alt="<%= second-ad-text %>">
+                            <a href="<% = ad-link %>">
+                                <h5><%= ad-caption %></h5>
+                                <p><%= see-more %></p>
+                            </a>
+                        </div>
+                    </div>
+                </script>-->
+                
+                <!--<div class="ad">
                     <div>
-                        <img src="images/n1.jpg" alt="white dress Brand name">
+                        <img src="images/p1.jpg" alt="white dress Brand name">
                         <img src="images/n2.jpg" alt="white dress Brand name">
                         <a href="">
                             <h5>cotton white dresses</h5>
@@ -44,17 +68,17 @@
                             <p>see more</p>
                         </a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </main>
+       
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
+    <!--<script>
         $(document).ready(function(){
             $('#popup').addClass('pop-up');
         });
         $("#close").click(function(){
             $("#popup").fadeOut();
 	    });
-    </script>
+    </script>-->
 </html>
